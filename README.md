@@ -8,4 +8,6 @@ AI stores board configurations it comes across in a dictionary to expedite the p
 
 #Builds
 
+"FinalApps" folder contains the playable applications for both Windows and Mac operating systems
+
 
