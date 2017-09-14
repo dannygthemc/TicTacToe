@@ -1,0 +1,21 @@
+<-- Import environment variables -->
+<property environment="env"/>
+
+<-- Define the appbundler task -->
+<taskdef name="bundleapp" 
+classname="com.oracle.appbundler.AppBundlerTask"
+classpath="lib/appbundler-1.0.jar"/>
+
+<-- Create the app bundle -->
+<target name="TicTacToeGame">
+    <bundleapp outputdirectory="dist"
+        name="TicTacToeGame"
+        displayname="TicTacToe"
+        identifier="tictacpack.PlayTTT"
+        shortversion="1.0"
+        applicationCategory="public.app-category.developer-tools"
+        mainclassname=tictacpack.PlayTTT
+	<runtime dir="JREs\jre-8u65-macosx-x64~\jre1.8.0_65.jre"/>
+        <classpath file="dist/TicTacToeGame.jar"/>
+    </bundleapp>
+</target>
