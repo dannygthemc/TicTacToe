@@ -1,3 +1,4 @@
+* linguist-vendored
 *.java linguist-detectable=true
 *.roff linguist-detectable=false
 
